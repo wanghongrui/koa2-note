@@ -21,9 +21,6 @@ module.exports = {
     if ( userResult ) {
       if ( formData.userName === userResult.name ) {
         result.success = true
-      } else {
-        result.message = userCode.FAIL_USER_NAME_OR_PASSWORD_ERROR
-        result.code = 'FAIL_USER_NAME_OR_PASSWORD_ERROR'
       }
     } else {
       result.code = 'FAIL_USER_NO_EXIST',
